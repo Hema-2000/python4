@@ -1,0 +1,8 @@
+def invert(dic):
+    inv={v:k for k,v in dic.items()}
+    return str(inv)
+dic=({"a":1,"b":2,"c":3})
+print(invert(dic))
+
+output:
+{1: 'a', 2: 'b', 3: 'c'}

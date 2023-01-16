@@ -1,0 +1,8 @@
+def nth_even(n):
+    l=2*n-2
+    return l
+n=int(input())
+print(nth_even(n))
+output:
+100
+198

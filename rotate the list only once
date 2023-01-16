@@ -1,0 +1,10 @@
+def rotate_num(lis):
+    lis[:0]=[lis[-1]]
+    lis.pop()
+    return lis
+
+lis=[1,2,3,4,5]
+res=rotate_num(lis)
+print(res)
+output:
+[5, 1, 2, 3, 4]

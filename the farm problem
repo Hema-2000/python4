@@ -1,0 +1,12 @@
+def farmer_count(n,m,k):
+    total=(n*2)+(m*4)+(k*4)
+    return total
+n=int(input())
+m=int(input())
+k=int(input())
+print(farmer_count(n,m,k))
+output:
+5
+2
+8
+50

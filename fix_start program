@@ -1,0 +1,36 @@
+def fix_start(n):
+    l=len(n)
+    if(l>=1):
+        p='*'
+        k=n[0]+n[1:].replace(n[0],p)
+        return (k)
+
+n=input()
+st=fix_start(n)
+print(st)
+output:
+bubby
+bu**y
+
+#another method:
+
+def fix_start(n):
+    l=len(n)
+    p='*'
+    x=""
+    if(l>=1):
+       
+        for i in n:
+            if i==n[0] and i not in x:
+                x+=i
+            elif i==n[0] and i in x:
+                
+                x+=p
+            else:
+                x+=i
+    return (x)
+
+n=input()
+st=fix_start(n)
+print(st)
+    

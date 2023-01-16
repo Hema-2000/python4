@@ -1,0 +1,21 @@
+def stupid_addition(a,b):
+    
+    if(type(a)==int and type(b)==int):
+        c=str(a)
+        d=str(b)
+        c+=d
+        return int(c)
+    elif(type(a)==str and type(b)==str):
+        x=int(a)
+        y=int(b)
+        z=x+y
+        return z
+    else:   
+  
+        return None
+a="1"
+b=2
+
+print(stupid_addition(a,b))
+
+output:None

@@ -1,0 +1,32 @@
+class Functions:
+
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+    def add(self):
+        print("sum:",self.x+self.y)
+    def sub(self):
+        print("sub:",self.x-self.y)
+    def mul(self):
+        print("mul:",self.x*self.y)
+    def div(self):
+        print("div:",self.x/self.y)
+
+
+
+
+from arithmetic import Functions
+obj=Functions(4,2)
+obj.add()
+obj.sub()
+obj.div()
+obj.mul()
+
+
+
+
+output:
+sum:6
+sub:2
+div:2.0
+mul:8

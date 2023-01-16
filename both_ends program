@@ -1,0 +1,16 @@
+def both_ends(n):
+    l=len(n)
+    if(l<2):
+        return ""
+    else:
+        c=n[0:2]+n[-2:]
+        # d=n[-2:]
+        print("'"+c+"'")
+    return
+
+n=input()
+both_ends(n)
+   
+output:
+strings
+'stgs'

@@ -1,0 +1,16 @@
+def mix_up(n,m):
+    l1=len(n)
+    l2=len(m)
+    if(l1>=2 and l2>=2):
+        x=m[0:2]+n[2:]+' '+n[0:2]+m[2:]
+        # print(m[0:2]+n[2:]+' '+n[0:2]+m[2:])
+    return x
+
+n=input()
+m=input()
+st=mix_up(n,m)
+print("'"+st+"'")
+output:
+hema
+latha
+'lama hetha'

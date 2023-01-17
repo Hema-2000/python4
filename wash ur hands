@@ -1,0 +1,22 @@
+n=int(input())
+m=int(input())
+minutes=(21*n)/60
+mon=minutes*30
+res=mon*m
+print(res)
+r2=int(res)
+print(r2)
+r=str(res)
+if(r[-1]=='5'):
+    r1="30 seconds"
+else:
+    r1="0 seconds"
+print(r1);
+print(r2,"minutes","and",r1)
+output:
+7
+9
+661.5
+661
+30 seconds
+661 minutes and 30 seconds

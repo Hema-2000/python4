@@ -1,0 +1,13 @@
+import re
+def valid_num(s):
+
+    Filter2 = re.compile("\([0-9]{3}\) [0-9]{3}\-[0-9]{4}")
+    if(Filter2.match(s)):
+        return True
+    else:
+        return False
+s="(111) 234-7896"
+print(valid_num(s))
+
+output:
+True

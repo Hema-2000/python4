@@ -1,0 +1,8 @@
+def emphasis(s):
+    res=' '.join(i.capitalize() for i in s.split())
+    return res
+s="hello world"
+print(emphasis(s))
+
+output:
+Hello World

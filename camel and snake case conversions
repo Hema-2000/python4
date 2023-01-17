@@ -2,19 +2,20 @@ def camel_case(s):
     t=s.split("_")
     res=t[0]+''.join(i.title() for i in t[1:])
     return res
-def snake_case(s):
+def snake_case(k):
     r=""
-    for i in s:
+    for i in k:
         if(i.isupper()):
             r+="_"+i.lower()
         else:
             r+=i
    
     return r[1:]
-s=input()
+s="python_is_good"
+k="HemaLatha"
 print(camel_case(s))
-print(snake_case(s))
+print(snake_case(k))
+
 output:
-HemaLatha
-HemaLatha
+pythonIsGood
 hema_latha

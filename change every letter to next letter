@@ -1,0 +1,21 @@
+def LetterChanges(st):
+    index = 0
+    newstring = ""
+    alphap = "abcdefghijklmnopqrstuvwxy"
+
+    for i in st.lower():
+        if i.islower(): 
+            index = alphap.index(i) + 1 
+            newstring += alphap[index]    
+        else: 
+            newstring += i    
+    return newstring
+
+
+
+s=input()
+print(LetterChanges(s))
+
+output:
+hema3 latha
+ifnb3 mbuib

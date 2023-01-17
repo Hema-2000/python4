@@ -1,0 +1,20 @@
+def camel_case(s):
+    t=s.split("_")
+    res=t[0]+''.join(i.title() for i in t[1:])
+    return res
+def snake_case(s):
+    r=""
+    for i in s:
+        if(i.isupper()):
+            r+="_"+i.lower()
+        else:
+            r+=i
+   
+    return r[1:]
+s=input()
+print(camel_case(s))
+print(snake_case(s))
+output:
+HemaLatha
+HemaLatha
+hema_latha
